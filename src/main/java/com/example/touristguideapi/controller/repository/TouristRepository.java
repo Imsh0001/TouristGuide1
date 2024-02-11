@@ -14,8 +14,10 @@ public class TouristRepository {
 
     public TouristRepository() {
         this.attractions = new ArrayList<>();
-        attractions.add(new TouristAttractions("Big Ben", "It is the 3th largest free-standing clock tower in the world. The clock has become a symbol of the England and London."));
-        attractions.add(new TouristAttractions("The British Museum", " a public museum dedicated to human history, art and culture located in the Bloomsbury area of London."));
+        attractions.add(new TouristAttractions("Buckingham Palace", "The official residence of the British monarch in London, Buckingham Palace is an iconic symbol of the British monarchy."));
+        attractions.add(new TouristAttractions("Big Ben", "an iconic landmark in London, is a notable clock tower celebrated for its grandeur and historical significance."));
+        attractions.add(new TouristAttractions("The British Museum", "The British Museum, situated in London, is a renowned cultural institution boasting an extensive collection of ancient artifacts and artworks."));
+        attractions.add(new TouristAttractions("Windsor Castle", "Windsor Castle, a venerable fortress in England, holds the distinction of being the largest and oldest continually inhabited castle worldwide."));
     }
 
 
