@@ -2,10 +2,6 @@ package com.example.touristguideapi.controller.modul;
 
 public class TouristAttractions {
 
-
-
-
-
         private String name;
         private String description;
 

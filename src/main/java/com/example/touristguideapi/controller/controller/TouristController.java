@@ -18,7 +18,7 @@ public class TouristController {
         this.touristService = touristService;
     }
 
-    @PostMapping("/attractions")
+    @PostMapping(path = "/attractions")
     public ResponseEntity<?> createAttraction(@RequestBody TouristAttractions attraction) {
         touristService.addAttraction(attraction);
         return new ResponseEntity<>(attraction, HttpStatus.CREATED);
@@ -36,7 +36,7 @@ public class TouristController {
         if (attraction != null) {
             return new ResponseEntity<>(attraction, HttpStatus.OK);
         } else {
-            return new ResponseEntity<>("Attraction not found", HttpStatus.NOT_FOUND);
+            return new ResponseEntity<>(attraction, HttpStatus.NOT_FOUND);
         }
     }
 
@@ -49,6 +49,6 @@ public class TouristController {
     @DeleteMapping("/attractions/{name}")
     public ResponseEntity<?> deleteAttraction(@PathVariable String name) {
         touristService.deleteAttraction(name);
-        return new ResponseEntity<>("Attraction deleted", HttpStatus.OK);
+        return new ResponseEntity<>(HttpStatus.OK);
     }
 }
